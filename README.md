@@ -12,7 +12,7 @@ pnpm link ../sonik # Your local sonik needs to install the dependencies via yarn
 pnpm dev # run!
 ```
 
-## How it Works
+## How It Works
 
 > Currently this repository only works as a Demo.
 > 
