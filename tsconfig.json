@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      // "@cloudflare/workers-types",
+      "node",
+      "vite/client",
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik"
+    // "jsxImportSource": "react"
+  },
+}

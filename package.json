@@ -1,0 +1,31 @@
+{
+  "name": "sonik-qwik",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "vite build && vite build --mode client",
+    "dev": "vite",
+    "deploy": "$npm_execpath build && wrangler pages deploy ./dist"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.2.18",
+    "@builder.io/qwik-react": "^0.5.0",
+    "@hono/vite-dev-server": "^0.0.7",
+    "@sonikjs/react": "^0.0.4",
+    "hono": "^3.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sonik": "^0.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231025.0",
+    "@sonikjs/cloudflare-pages": "^0.0.1",
+    "@sonikjs/vercel": "^0.0.1",
+    "@types/node": "^20.8.6",
+    "@types/react": "^18.2.20",
+    "tsx": "^4.1.2",
+    "vite": "^4.4.11",
+    "vite-plugin-inspect": "^0.7.42"
+  }
+}
