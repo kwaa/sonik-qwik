@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import sonik from 'sonik/vite'
 import pages from '@sonikjs/cloudflare-pages'
 
-import { qwikVite } from '@builder.io/qwik/optimizer'
 import { qwikReact } from '@builder.io/qwik-react/vite'
+import { qwikVite } from '@builder.io/qwik/optimizer'
 import Inspect from 'vite-plugin-inspect'
 
 export default defineConfig({
@@ -27,11 +27,9 @@ export default defineConfig({
       srcDir: './app',
       client: {
         input: ['./app/islands/qwik-counter.tsx', './app/islands/react-counter.tsx'],
-        outDir: './dist',
+        // outDir: './dist',
       },
-      ssr: {
-        input: './preset-qwik/server.ts'
-      }
+      ssr: { input: './preset-qwik/server.ts' },
     }),
     Inspect()
   ],
