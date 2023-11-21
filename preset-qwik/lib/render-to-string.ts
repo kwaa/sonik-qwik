@@ -1,8 +1,6 @@
 import { renderToString as qwikRenderToString } from '@builder.io/qwik/server'
 import { isDev } from '@builder.io/qwik/build'
-import { type QwikManifest, type SymbolMapper, type SymbolMapperFn } from '@builder.io/qwik/optimizer'
-
-import { relative } from 'node:path'
+import { type QwikManifest, type SymbolMapperFn } from '@builder.io/qwik/optimizer'
 
 import { manifest } from '@qwik-client-manifest'
 
